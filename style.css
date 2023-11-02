@@ -10,7 +10,7 @@
   }
   
   body {
-    background-color: #191931;
+    background-color: #3C486B;
     color: #e1e1f1;
     display: flex;
     flex-direction: column;
@@ -27,19 +27,22 @@
     font-size: 12rem;
     text-transform: uppercase;
     font-weight: 900;
-    -webkit-text-stroke: 2px #2d2d56;
+    -webkit-text-stroke: 2px #29294d;
     -webkit-text-fill-color: transparent;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     z-index: -1;
     user-select: none;
   }
   
+
+
   .my-photo {
     width: 10rem;
-    border-radius: 50%;
+    border-radius: 10%;
     aspect-ratio: 1/1;
     object-fit: cover;
     object-position: top;
+    margin-bottom: 1%;
   }
   
   a {
@@ -81,11 +84,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2d2d56;
+    background-color: #232c46;
     gap: 1rem;
     padding: 1rem;
     border-radius: 20px;
-    box-shadow: 8px 10px 0 #0f0f25;
+    box-shadow: 8px 10px 0 #202031;
     border: 2px solid #2d2d56;
   }
   
@@ -174,3 +177,47 @@
       opacity: 0;
     }
   }
+
+
+  
+  
+
+
+
+
+
+.playful span {
+  position: relative;
+  color: #ffffff;
+  text-shadow: textShadow(0.25, 6, #E485F8);
+  animation: scatter 1.75s infinite;
+}
+
+
+
+.playful span:nth-child(3n) {
+  color: #FFD913;
+  text-shadow: textShadow(0.25, 6, #6EC0A9);
+  animation-delay: 0.15s;
+}
+
+
+
+.playful span:nth-child(7n), .playful span:nth-child(11n) {
+  color: #2b71f3;
+  text-shadow: textShadow(0.25, 6, #FF5555);
+  animation-delay: 0.25s;
+}
+
+@keyframes scatter {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
