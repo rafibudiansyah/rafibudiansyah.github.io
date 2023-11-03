@@ -34,6 +34,20 @@ body {
   user-select: none;
 }
 
+p {
+  text-align: center;
+  margin-right: 25px;
+  margin-left: 20px;
+}
+
+@media(max-width: 767px){
+  p {
+      width: 80%;
+      margin-right: 25px;
+  margin-left: 25px;
+  }
+}
+
 
 
 .my-photo {
@@ -80,10 +94,6 @@ ul.links li:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-p {
-  text-align: center;
-  line-height: 5px;
-}
 
 
 .links {
@@ -231,9 +241,3 @@ animation-delay: 0.25s;
 }
 }
 
-@media(max-width: 600px){
-  p {
-      font-size: 12px;
-      line-height: 2px;
-  }
-}
